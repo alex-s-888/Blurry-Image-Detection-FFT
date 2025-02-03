@@ -78,5 +78,5 @@ import tensorflow as tf
 converter = tf.lite.TFLiteConverter.from_keras_model(model)
 tflite_model = converter.convert()
 
-with open('../deployment_docker/mymodel.tflite', 'wb') as f_out:
+with open('mymodel.tflite', 'wb') as f_out:
     f_out.write(tflite_model)

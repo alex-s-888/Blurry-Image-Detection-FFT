@@ -21,7 +21,7 @@ class TFLiteModel:
         return self.interpreter.get_tensor(self.output_details[0]["index"])
 
 
-model = TFLiteModel("../deployment_docker/mymodel.tflite")
+model = TFLiteModel("../model/mymodel.tflite")
 mylabels = ["Blurred", "Not Blurred"]
 
 
